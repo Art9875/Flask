@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include '_menu.html' %}<br>
+
+    <form action="/age" method="post">
+        <label for="">Введите свой возраст:</label>
+        <input type="text" name="age" size="50">
+    </form><br>
+
+    <img src="{{ url_for('static', filename='img/Screenshot_19.png') }}" height="50%" width="50%">
+</body>
+</html>
